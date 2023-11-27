@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 3</title>
+
+        <style>
+            label {
+                width: 120px;
+                display: inline-block;
+                padding-top: 5px;
+            }
+
+            #category {
+                width: 150px;
+            }
+            .role {
+                display: flex;
+                margin-top: 20px;
+            }
+
+            .role-item {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .following {
+                margin-top: 20px;
+                display: flex;
+            }
+
+            .following-item {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .btn-login {
+                margin-top: 20px;
+                margin-left: 120px;
+            }
+
+            .btn-reset {
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <div>
+                <label for="name">Username: </label>
+                <input type="text" id="name" name="name" />
+            </div>
+
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" id="password" />
+            </div>
+
+            <div>
+                <label for="city">City of</label>
+                <input type="text" id="city" />
+            </div>
+
+            <div>
+                <label for="employment">Employment: </label>
+                <input type="text" id="employment" />
+            </div>
+
+            <div>
+                <label for="category">Web server</label>
+                <select name="server" id="category">
+                    <option value="">--Choose a server--</option>
+                    <option value="1">Apache HTTP server</option>
+                    <option value="2">Internet Information Services</option>
+                </select>
+            </div>
+
+            <div class="role">
+                <label>Please specify your role</label>
+                <div class="role-item">
+                    <label for="">
+                        <input type="radio" name="role" value="admin" />Admin
+                    </label>
+
+                    <label for="">
+                        <input
+                            type="radio"
+                            name="role"
+                            value="engineer"
+                        />Engineer
+                    </label>
+
+                    <label for="">
+                        <input
+                            type="radio"
+                            name="role"
+                            value="manager"
+                        />Manager
+                    </label>
+
+                    <label for="">
+                        <input type="radio" name="role" value="guest" />Guest
+                    </label>
+                </div>
+            </div>
+
+            <div class="following">
+                <label for="">Single Sign-on to the following</label>
+
+                <div class="following-item">
+                    <label for=""
+                        ><input
+                            type="checkbox"
+                            name="following"
+                            value="following"
+                        />Mail</label
+                    >
+                    <label for=""
+                        ><input
+                            type="checkbox"
+                            name="following"
+                            value="following"
+                        />
+                        Payroll</label
+                    >
+                    <label for=""
+                        ><input
+                            type="checkbox"
+                            name="following"
+                            value="following"
+                        />Self-service</label
+                    >
+                </div>
+            </div>
+            <button class="btn-login" type="button">Login</button>
+            <button class="btn-reset" type="reset">Reset</button>
+        </form>
+    </body>
+</html>
