@@ -1,0 +1,48 @@
+footer {
+    width: 100%;
+    height: 230px;
+    background-color: #334455;
+    border-radius: 8px;
+}
+
+.enter-info {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+h2 {
+    color: #fff;
+}
+
+h2 span {
+    color: #fda500;
+}
+p {
+    color: #fff;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+button {
+    width: 200px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #f8db35;
+}
+
+footer:hover button {
+    background-color: #fda500;
+    color: #fff;
+}
+
+footer:hover input {
+    background-color: #ddd;
+}
+
+footer:hover input::placeholder {
+    color: #fda500;
+}

@@ -1,0 +1,87 @@
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.action-img a  + a{
+    display: none;
+}
+
+.action:hover a:last-child {
+    display: block;
+}
+.action:hover a:first-child {
+    display: none;
+}
+
+.btn-nav button {
+    padding: 10px 15px;
+}
+
+button:hover {
+    background-color: #28388d;
+    color: #fff;
+}
+
+.list-seller {
+    margin-top: 50px;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+.action {
+    position: relative;
+    margin-left: 50px;
+}
+
+.action-icon {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.action:hover .action-icon {
+    display: block;
+} 
+
+.action-row i{
+    padding: 23px;
+    color: #fff;
+    background-color: #28388d;
+}
+
+.action-btn {
+    padding: 20px;
+    color: #fff;
+    background-color: #28388d;
+    margin-top: 10px;
+    width: 200px;
+
+}
+
+.fa-star {
+    color: #ffa500;
+}
+.fa-star:last-child {
+    color: #ccc;
+   
+}
+
+.stars {
+    padding-top: 40px;
+}
