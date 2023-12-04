@@ -1,0 +1,53 @@
+
+.content-box {
+    padding: 20px 10px;
+}
+
+label {
+    background-color: #d95824;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  
+.fa-plus, .fa-minus {
+    height: 100%;
+    width: 50px;
+    text-align: center;
+}
+
+.minus-1, .minus-2, .minus-3 {
+    display: none;
+}
+ 
+#item-1 ~ label, #item-2 ~ label, #item-3 ~ label {
+    display: block;
+    background-color: #d95824;
+    width: 100%;
+}
+
+input[id="item-1"]:checked ~ label .plus-1 ,
+input[id="item-2"]:checked ~ label .plus-2,
+input[id="item-3"]:checked ~ label .plus-3 {
+    display: none;
+}
+
+input[id="item-1"]:checked ~ label .minus-1,
+input[id="item-2"]:checked ~ label .minus-2,
+input[id="item-3"]:checked ~ label .minus-3 {
+    display: inline-block;
+}
+
+p {
+ 
+    display: none;
+    padding-bottom: 30px;
+}
+
+
+input[id="item-1"]:checked ~ p,
+input[id="item-2"]:checked ~ p,
+input[id="item-3"]:checked ~ p {
+    display: block;
+}

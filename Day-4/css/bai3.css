@@ -59,6 +59,14 @@ img {
     display: block;
 } 
 
+ /* .action-icon:hover {
+    display: block;
+} */
+
+/* .action-row:hover {
+    display: block;
+}  */
+
 .action-row i{
     padding: 23px;
     color: #fff;

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 1</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/bai1.css" />
+    </head>
+    <body>
+        <h1>Hey there</h1>
+        <p>
+            <span>We'd like to hear from you.</span> Send us your message or
+            just say hy with our contact form or directly via phone, we love to
+            chat
+        </p>
+
+        <div class="form-container">
+            <form action="">
+                <div class="input-container">
+                    <i class="fa-solid fa-user" style="color: #e8eaee"></i>
+                    <div class="tooltiptext">Enter your name</div>
+                    <div class="create"></div>
+                    <input type="text" name="name" placeholder="Your name" />
+                    <i class="fa-solid fa-x" style="color: #0c3679"></i>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-envelope" style="color: #d5dae2"></i>
+                    <div class="tooltiptext">Enter your email</div>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="your@domain.com"
+                    />
+                </div>
+
+                <div class="input-container">
+                    <i
+                        class="fa-solid fa-mobile-screen"
+                        style="color: #e9eaec"
+                    ></i>
+                    <div class="tooltiptext">Enter your phone</div>
+
+                    <input type="text" name="phone" placeholder="+44 00 1234" />
+                </div>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-book" style="color: #e7eaee"></i>
+                    <div class="tooltiptext">Choose your subject</div>
+
+                    <select>
+                        <option value="" checked>Subject</option>
+                        <option value="1">Mạng máy tính</option>
+                        <option value="2">Công nghệ Web</option>
+                        <option value="3">Toán rời rạc</option>
+                        <option value="4">Phát triển ứng dụng</option>
+                    </select>
+                </div>
+
+                <div class="input-container" style="padding-top: 40px">
+                    <i class="fa-solid fa-message" style="color: #dee2e7"></i>
+                    <div class="tooltiptext">Enter your message</div>
+
+                    <textarea
+                        name="message"
+                        id=""
+                        cols="82"
+                        rows="20"
+                        placeholder="Message"
+                    ></textarea>
+                </div>
+                <div class="checkbox-send">
+                    <input type="checkbox" name="checkbox" checked />
+                    <label for="">Send me a copy of this message</label>
+                    <button>SEND</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

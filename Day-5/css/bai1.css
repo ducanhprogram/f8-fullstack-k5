@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;  
+}
+
+
+@font-face {
+    font-family: Lobster;
+    src: url(../font/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../font/Lato-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../font/Lato-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../font/Lato-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../font/Lato-Black.ttf);
+    font-weight: 900;
+}
+
+body {
+    font-family: Lato;
+}
+
+h1 {
+    font-family: Lobster;
+    font-size: 52px;
+    padding: 30px 50px
+}
+
+p {
+    padding: 30px 50px;
+}
+
+span {
+    color: red;
+}
+
+i {
+    background-color: #ccc;
+    padding: 20px;  
+}
+
+input {
+    padding: 18px 0;
+    /* margin-left: 40px; */
+}
+
+.form-container {
+    padding: 30px 50px;
+}
+
+
+.input-container {
+    position: relative;
+    width: 700px;
+}
+
+.input-container:hover i  {
+    background-color: #000;
+}
+
+.input-container .fa-x {
+    background: none;
+    right: 10px;
+    display: none;
+    
+    /* display: block; */
+}
+
+.input-container:hover .fa-x {
+    display: block;
+    background: none;
+    font-size: 10px;
+}
+
+.input-container input {
+    padding-left: 80px; 
+    width: 100%;
+  }
+
+
+  .input-container i {
+    position: absolute;
+    top: 50%;
+    /* left: 10px;  */
+    transform: translateY(-50%);
+    color: #555; 
+  }
+
+  
+
+  div {
+    margin-bottom: 40px;
+
+  }
+
+  .input-container .create {
+    position: absolute;
+    bottom: 2%;
+    right: 10px;
+    left: 40px;
+    transform: translateY(-51%);
+    width: 0;
+    height: 0;
+    border-color: #000 transparent transparent transparent;
+}
+
+  
+.input-container:hover .create {
+    display: inline-block;
+    border-width: 15px;
+    /* border-color: #000 transparent transparent  transparent; */
+    border-style: solid;
+    margin-left: 20px;
+    background-color: #fff
+}
+
+.tooltiptext {
+    position: absolute;
+    bottom: 80%;
+    left: 20px;
+    background-color: #000;
+    color: #fff;
+    display: none;
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+  
+}
+
+
+.input-container:hover .tooltiptext {
+    display: block;
+}
+
+.input-container select {
+    display: block;
+    padding: 18px 80px;
+    width: 100%;
+}
+
+
+.input-container .fa-message {
+    height: 87%;
+    margin-top: 1.2em;
+}
+
+
+
+.input-container textarea {
+    padding-left: 80px;
+}
+
+.checkbox-send input{
+    display: inline-block;
+    padding: 10px;
+}
+
+.checkbox-send button {
+    margin-left: 315px;
+    padding: 15px 60px;
+    background-color: red;
+    color: #fff;
+    border-style: none;
+}
+
+
+
+
+
