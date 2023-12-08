@@ -1,0 +1,119 @@
+
+@font-face {
+    font-family: Open-Sans;
+    src: url(../Font/static/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url(../Font/static/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url(../Font/static/OpenSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url(../Font/static/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url(../Font/static/OpenSans-Medium.ttf);
+}
+
+body {
+    margin: 50px 100px;
+    font-family: Open-Sans;
+    color: #666;
+}
+
+
+.dropdown {
+    display: flex;
+
+}
+
+.menu-child{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu-child {
+    display: block;
+}
+
+input {
+    display: none; 
+    padding-right: 70px;
+}
+
+i {
+    padding-right: 10px;
+}
+
+label {
+    padding: 20px 0px;
+}
+.item-color:hover {
+    color: #fff;
+}
+li {
+    list-style: none;
+}
+
+.item-home {
+    border: 1px solid #666;
+    padding: 10px 20px;
+}
+
+.item-about, .item-news, .item-portfolio, .item-blog, .item-contacts {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 15px 18px;
+}
+
+.item-about:hover, .item-news:hover, .item-portfolio:hover, .item-blog:hover, .item-contacts:hover {
+    background-color: #2da5da;
+    
+}
+
+.box {
+    width: 0px;
+    height: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent  transparent #eee transparent;
+    position: absolute;
+    top: -18px;
+    left: 20px;
+    
+}
+
+.menu-child {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+
+.menu-child li {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 15px;
+    padding-right: 120px;
+    justify-content: center;
+    align-items: center;
+}
+.menu-child  {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.nothing {
+    width: 350px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+ 

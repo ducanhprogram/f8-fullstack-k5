@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../Font/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Font/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Font/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Font/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Font/Roboto-Black.ttf);
+    font-weight: 900;
+}
+
+
+body {
+    font-family: Roboto;
+    margin: 50px 100px;
+    background-color: #ebf5fe;
+    color: #666666;
+}
+
+.item {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.layout-unique, .layout-theme, .layout-digital, .layout-website, .layout-responsive, .layout-quick{
+    width: 350px;
+    height: 220px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    box-shadow: 0px 0px 30px 5px #ccc;
+}
+
+/* .layout-unique:hover i{
+    box-shadow: #e46b68 0px 0px 50px -5px, #e46b68 0px 0px 50px -8px;
+}
+
+.layout-unique:hover {
+    border: 2px solid #e46b68;
+}  */
+
+.layout-unique:hover,
+.layout-theme:hover, .layout-digital:hover, .layout-website:hover, .layout-responsive:hover, .layout-quick:hover {
+    border: 2px solid #e46b68;
+}
+
+.layout-unique:hover i,
+.layout-digital:hover i
+{
+    box-shadow: #e46b68 0px 0px 50px -5px, #e46b68 0px 0px 50px -8px;
+
+}
+
+.layout-theme:hover i {
+    box-shadow: #62bca2 0px 0px 50px -5px, #62bca2 0px 0px 50px -8px;
+}
+
+.layout-website:hover i {
+    box-shadow: #4778dc 0px 0px 50px -5px, #4778dc 0px 0px 50px -8px;
+}
+
+.layout-responsive:hover i {
+    box-shadow: #7d2cd1 0px 0px 50px -5px, #7d2cd1 0px 0px 50px -8px;
+
+}
+.layout-quick:hover i {
+    box-shadow: #7ea841 0px 0px 50px -5px, #7ea841 0px 0px 50px -8px;
+
+}
+
+.desc {
+    line-height: 1.5rem;
+}
+.title-desc {
+    display: inline-block;
+    padding: 15px 15px;
+    vertical-align: middle;
+    font-weight: 700;
+}
+
+
+i {
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    background-color: #e46b68;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+}
+
+.fa-table-list {
+    background-color: #62bca2;
+    vertical-align: middle;
+}
+
+.fa-bolt {
+    background-color: #e69437;
+    vertical-align: middle;
+}
+
+.fa-shuttle-space {
+    background-color: #4778dc;
+    vertical-align: middle;
+}
+
+.fa-database {
+    background-color: #7d2cd1;
+    vertical-align: middle;
+}
+
+.fa-envelope {
+    background-color: #7ea841;
+    vertical-align: middle;
+}
+ a {
+    display: inline-block;
+    padding-top: 15px;
+    text-decoration: none;
+    color: #2f68eb;
+    font-weight: 700;
+}
+
+.layout {
+    margin-bottom: 20px;
+}
+

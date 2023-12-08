@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu Dropdown</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link
+            rel="stylesheet"
+            href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/bai1.css" />
+    </head>
+    <body>
+        <nav>
+            <ul class="dropdown gap-2">
+                <li class="item-home">
+                    <input type="checkbox" id="home" name="home" />
+                    <label for="home">
+                        <i class="fa-solid fa-house-chimney"></i
+                    ></label>
+                </li>
+
+                <li class="item-about">
+                    <input type="checkbox" id="about" name="about" />
+                    <div class="item-color">
+                        <label for="about">
+                            <i class="fa-solid fa-star"></i>
+                            About us
+                        </label>
+                        <input type="checkbox" id="home" />
+                        <label for="home"
+                            ><i class="fa-solid fa-circle-chevron-down"></i
+                        ></label>
+                    </div>
+
+                    <nav class="menu-child">
+                        <div class="box"></div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Company</li>
+                            <li><i class="fa-solid fa-check"></i> Products</li>
+                            <li><i class="fa-solid fa-check"></i> Specials</li>
+                        </ul>
+                    </nav>
+                </li>
+
+                <li class="item-news">
+                    <input type="checkbox" id="news" name="news" />
+                    <div class="item-color">
+                        <label for="news">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            News
+                        </label>
+                        <input type="checkbox" id="news" />
+                        <label for="news"
+                            ><i class="fa-solid fa-circle-chevron-down"></i
+                        ></label>
+                    </div>
+
+                    <nav class="menu-child">
+                        <div class="box"></div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Company</li>
+                            <li><i class="fa-solid fa-check"></i> Products</li>
+                            <li><i class="fa-solid fa-check"></i> Specials</li>
+                        </ul>
+                    </nav>
+                </li>
+
+                <li class="item-portfolio">
+                    <input type="checkbox" id="portfolio" name="portfolio" />
+                    <div class="item-color">
+                        <label for="portfolio">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Portfolio
+                        </label>
+                        <input type="checkbox" id="portfolio" />
+                        <label for="portfolio"
+                            ><i class="fa-solid fa-circle-chevron-down"></i
+                        ></label>
+                    </div>
+
+                    <nav class="menu-child">
+                        <div class="box"></div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Company</li>
+                            <li><i class="fa-solid fa-check"></i> Products</li>
+                            <li><i class="fa-solid fa-check"></i> Specials</li>
+                        </ul>
+                    </nav>
+                </li>
+
+                <li class="item-blog">
+                    <input type="checkbox" id="blog" name="blog" />
+                    <div class="item-color">
+                        <label for="blog">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            Blog
+                        </label>
+                        <input type="checkbox" id="blog" />
+                        <label for="blog"
+                            ><i class="fa-solid fa-circle-chevron-down"></i
+                        ></label>
+                    </div>
+
+                    <nav class="menu-child">
+                        <div class="box"></div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Company</li>
+                            <li><i class="fa-solid fa-check"></i> Products</li>
+                            <li><i class="fa-solid fa-check"></i> Specials</li>
+                        </ul>
+                    </nav>
+                </li>
+                <div class="nothing"></div>
+
+                <li class="item-contacts">
+                    <input type="checkbox" id="contacts" name="contacts" />
+                    <div class="item-color">
+                        <label for="contacts">
+                            <i class="fa-solid fa-phone"></i>
+                            Contacts
+                        </label>
+                        <input type="checkbox" id="contacts" />
+                        <label for="contacts"
+                            ><i class="fa-solid fa-circle-chevron-down"></i
+                        ></label>
+                    </div>
+
+                    <nav class="menu-child">
+                        <div class="box"></div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Company</li>
+                            <li><i class="fa-solid fa-check"></i> Products</li>
+                            <li><i class="fa-solid fa-check"></i> Specials</li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
