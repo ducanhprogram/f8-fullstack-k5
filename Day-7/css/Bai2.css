@@ -1,0 +1,98 @@
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Black.ttf);
+}
+
+body {
+    background-image: url(../DJI_0030-fixed2-mini-1.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    font-weight: 400;
+    font-family: Asap;
+    color: #fff;
+}
+.profile {
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    width: 300px;
+    top: 520px;
+    left: 80px;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 540px;
+    left: 400px;
+}
+
+.banner .row {
+    position: absolute;
+    top: 590px;
+    left: 400px;
+}
+
+span {
+     padding-right: 20px;
+     font-weight: 300;
+}
+
+li {
+    list-style: none;
+}
+
+.product {
+    position: absolute;
+    color: #000;
+   top: 650px;
+   right: 60px;
+}
+
+.product ul li {
+    float: left;
+    margin: 20px;
+    font-weight: 700;
+}
+
+.product ul li:hover {
+    color: orange;
+}
+
+.product ul li:hover:after {
+    content: " ";
+    border: 3px solid orange;
+    margin-top: 20px;
+    display: flex;
+}

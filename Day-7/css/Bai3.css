@@ -1,0 +1,123 @@
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(../Font/static/Asap-Black.ttf);
+}
+
+body {
+    font-family: Asap;
+}
+
+h2 {
+    margin: 20px 100px;
+    position: relative;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+h2::after {
+    content: " ";
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: absolute;
+    width: 800px;
+    top: 50%;
+    margin-left: 20px; 
+}
+
+.area ul {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.area ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    padding: 8px 10px;
+    border-radius: 999px;
+    margin: 20px 15px;
+    font-weight: bolder;
+}
+
+.area ul li:hover {
+    background-color: #af7c38;
+    color: #fff;
+}
+
+.area ul li span {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+img {
+    width: 400px;
+    height: 220px;
+    padding-right:10px;
+}
+
+
+
+.row-area {
+    display: flex;
+    margin: 10px 80px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item h3 {
+    position: absolute;
+    color: #fff;
+    top: 10%;
+    left: 20px;
+}
+
+.item span {
+    position: absolute;
+    top: 70%;
+    left: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+
+
+
