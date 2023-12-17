@@ -1,4 +1,6 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -29,66 +31,101 @@
 html {
     font-size: 62.5%;
 }
+a {
+    text-decoration: none;
+
+}
+
+
 
 body{
+    background-image: url(https://images.unsplash.com/photo-1545472956-3ebf777846cc?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     font-family: Manrope;
     font-size: 1.6rem;
-    background-image: url(https://plus.unsplash.com/premium_photo-1672040327955-c7631a475348?q=80&w=1483&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
-    background-position-x: 50%;
+}
+
+.logo{
+    display: flex;
+    font-size: 4rem;
+
 
 }
 
-.header-menu {
-    padding: 30px 50px;
-}
-h2 {
-    font-size: 28px;
-    font-weight: 700;
-    display: inline-block;
-    margin-right: 600px;
+.logo img {
+    width: 50px;
+    height: 50px;
+    vertical-align:middle;
 }
 
-.element .element-table td {
-    padding: 10px 80px;
-}
-
-.header-menu {
+header {
     position: relative;
-   
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 5rem;
 }
-.element {
+
+.navbar {
+    display: flex;
+}
+
+
+.mega_menu {
+    display: flex;
+    line-height: 3rem;
     position: absolute;
-    top: 100px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 75px;
+    left: 0;
     background-color: #fff;
-    padding: 10px;
-    left: 100px;
 }
 
-input {
+.menu {
+   margin: 4rem 8rem;
+
+}
+
+
+.usage {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.styleguide {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 120px;
+    position: relative;
+
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 300px;
+    border-left: 2px solid #ccc;
+    padding-left: 100px;
+}
+
+.nav_item {
+    padding: 3rem 4rem ;
+}
+.mega_menu {
     display: none;
 }
 
-i {
-    padding-right: 25px;
+
+
+.nav_item:hover .mega_menu {
+    display: flex;
 }
 
 
-.header-menu a {
-    display: inline-block;
-   color: #000;
-   text-decoration: none;
-}
-
-.header-item {
-    display: inline-block;
-}
-
-.element {
-    display: none;
-}
-
-.header-item:hover .element {
-    display: block;
-}
