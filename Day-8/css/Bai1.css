@@ -73,7 +73,7 @@ header {
 
 
 .mega_menu {
-    display: flex;
+    /* display: flex; */
     line-height: 3rem;
     position: absolute;
     top: 75px;
@@ -83,7 +83,13 @@ header {
 
 .menu {
    margin: 4rem 8rem;
+   position: relative;
 
+}
+
+.item-big1 {
+    position: absolute;
+    bottom: 126px;
 }
 
 
@@ -93,7 +99,7 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -103,7 +109,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     height: 120px;
-    position: relative;
+    /* position: relative; */
 
 }
 
