@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+
+    color: #fff;
+    padding: 10px;
+    width: 750px;
+    margin: 100px auto;
+    background-color: #fff;
+
+}
+
+.navbar label {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.content {
+    width: 750px;
+    margin: 0 auto;
+    text-align: left;
+    opacity: 0;
+}
+
+.content > div {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+input#simples:checked ~ .navbar .nav1 ,  input#simples:hover ~ .navbar .nav1
+ {
+    background-color: #4298db; /* Highlight the selected label */
+    color: #fff;
+  
+}
+
+input#algoritmo:checked ~ .navbar .nav2 ,  input#algoritmo:hover ~ .navbar .nav2
+ {
+    background-color: #4298db; /* Highlight the selected label */
+    color: #fff;
+}
+
+input#barra:checked ~ .navbar .nav3 ,  input#barra:hover ~ .navbar .nav3
+ {
+    background-color: #4298db; /* Highlight the selected label */
+    color: #fff;
+}
+
+input#captcha:checked ~ .navbar .nav4 ,  input#captcha:hover ~ .navbar .nav4
+ {
+    background-color: #4298db; /* Highlight the selected label */
+    color: #fff;
+}
+
+
+input#simples:checked ~ .content #simples-content,
+input#algoritmo:checked ~ .content #algoritmo-content,
+input#barra:checked ~ .content #barra-content,
+input#captcha:checked ~ .content #captcha-content {
+    display: block;
+}
+
+.container .content-content {
+    position: absolute;
+    top: 70px;
+    left: 225px;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 50px;
+    overflow-x: scroll;
+    transform: rotate(-90deg);
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transform-origin: top;
+    opacity: 1;
+}
+
+input#simples:checked ~ .content #simples-content{
+    opacity: 1;
+    transform: rotate(0deg);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+input:checked ~ .content > div {
+    opacity: 1;
+    transition: opactity 1s;
+}

@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    background-color: #31A8F7;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+}
+
+.title {
+    position: relative;
+}
+
+.title h1 {
+    position: absolute;
+    top: 250px;
+    color: #fff;
+    font-size: 5rem;
+    left: 990px;
+}
+
+.title p {
+    position: absolute;
+    top: 350px;
+    color: #fff;
+    left: 950px;
+    font-size: 3rem;
+}
+
+p span {
+    font-size: 20px;
+}
+
+
+.nav label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.nav .list {
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    opacity: 0;
+    transition-property: opactiy;
+    transition-duration: 1s;
+}
+
+
+label .fa-arrow-right  {
+    display: inline-block;
+    position: absolute;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition-property: transform, opacity;
+    transition-duration: 0.6s;
+    left: 15px;
+    color: #31A8F7;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+label .fa-bars {
+    color: #31A8F7;
+}
+
+.nav .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-bottom-right-radius: 100%;
+    transition-property: width, height;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+input:checked ~ label .fa-bars {
+    display: none;
+}
+
+input:checked ~ label .fa-arrow-right {
+    opacity: 1;
+    transform: rotate(180deg);
+    transition-property: transform, opactity;
+    transition-duration: 0.6s;
+}
+
+.nav input:checked ~ .overlay {
+    width: 200vw;
+    height: 200vh;
+    border-bottom-right-radius: 100%;
+    transition-property: width, height;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+
+}
+
+.nav input:checked ~ .list  {
+    opacity: 1;
+    transition-property: opactiy;
+    transition-duration: 1s;
+}
+
+.nav .list ul li {
+    padding: 10px 100px 10px 40px;
+    color: #31A8F7;
+    z-index: 1;
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+  
+}
+
+
+.nav .list ul li:hover {
+    color: #000;
+    background-color: #eee;
+
+}
+

@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Inter;
+    font-size: 1.6rem;
+    color: #aaa;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.enter-info {
+    display: flex;
+justify-content: center;
+    align-items: center;
+  
+}
+
+form {
+    width: 700px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+p {
+    text-align: center;
+}
+
+input {
+    padding: 20px;
+    /* border: none; */
+    border-radius: 5px;
+    width: 300px;
+    transition: all 0.5s ease;
+    border: 1px solid #000;
+    font-size: 2rem;
+}
+
+.row {
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.row label,
+.row input,
+.row textarea,
+.row select {
+    flex: 1;
+}
+
+label {
+    position: absolute;
+    top: 20px;
+    left: 13px;
+    text-align: center;
+}
+
+.row:first-child label:last-child{
+    left: 380px;
+    text-align: center;
+}
+
+input:focus + label, input:valid + label,textarea:focus + label, textarea:valid + label {
+    top: 5px;
+    font-size: 12px;
+    color: red;
+
+}
+
+.row select {
+    padding: 18px;
+    border-radius: 5px;
+    /* width: 300px; */
+    border: 1px solid #000;
+    color: #aaa;
+    font-size: 1.6rem;
+}
+
+textarea {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #4d77d9;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    display: block;
+   margin: 0 auto;
+}
+

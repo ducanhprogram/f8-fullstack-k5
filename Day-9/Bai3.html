@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/Bai3.css" />
+    </head>
+    <body>
+        <main>
+            <h2>Drop Us a Line</h2>
+            <p>
+                Reach out to us from our contact form and we will get back to
+                you shortly
+            </p>
+            <div class="enter-info">
+                <form>
+                    <div class="row">
+                        <input type="text" id="FirstName" required />
+                        <label for="FirstName">First Name *</label>
+
+                        <input type="text" id="LastName" required />
+                        <label for="LastName">Last Name *</label>
+                    </div>
+
+                    <div class="row">
+                        <input type="Email" id="email" required />
+                        <label for="email">Email *</label>
+
+                        <select name="" id="sales">
+                            <option value="0" disabled>
+                                Choose the element
+                            </option>
+                            <option value="1">Sales</option>
+                            <option value="2">Đồ mỹ phẩm thủ công</option>
+                            <option value="3">Nước hóa chiết suất</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <textarea
+                            name=""
+                            id=""
+                            cols="75"
+                            rows="10"
+                            required
+                        ></textarea>
+                        <label for="">Message *</label>
+                    </div>
+
+                    <button>Send message</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
