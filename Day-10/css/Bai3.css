@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    background-color: #313642;
+}
+
+.animation {
+    width: 200px;
+    height: 100px;
+    transform: 0.2s linear;
+}
+
+.back, .left, .right {
+    margin-top: 300px;
+    display: inline-block;
+    border: solid;
+    border-width: 50px 100px;
+    border-color: transparent transparent #dc564b #dc564b;
+    position: absolute;
+    transform-origin: top;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+
+.back {
+    border-color: #dc564b;
+    transform: translateX(-50px);
+    transition: z-index 0.3s;
+}

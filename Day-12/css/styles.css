@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Titillium_Web;
+    src: url(../font/Titillium_Web/TitilliumWeb-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Titillium_Web;
+    src: url(../font/Titillium_Web/TitilliumWeb-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Titillium_Web;
+    src: url(../font/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+    font-weight: 600;
+}
+ @font-face {
+    font-family: Titillium_Web;
+    src: url(../font/Titillium_Web/TitilliumWeb-Bold.ttf);
+    font-weight: 700;
+ }
+
+ @font-face {
+    font-family: Titillium_Web;
+    src: url(../font/Titillium_Web/TitilliumWeb-Black.ttf);
+    font-weight: 900;
+ }
+
+
+ @font-face {
+    font-family: Rajdhani;
+    src: url(../font/Rajdhani/Rajdhani-Light.ttf);
+    font-weight: 300;
+ }
+
+ @font-face {
+    font-family: Rajdhani;
+    src: url(../font/Rajdhani/Rajdhani-Regular.ttf);
+    font-weight: 400;
+ }
+
+ @font-face {
+    font-family: Rajdhani;
+    src: url(../font/Rajdhani/Rajdhani-Regular.ttf);
+    font-weight: 500;
+ }
+
+ @font-face {
+    font-family: Rajdhani;
+    src: url(../font/Rajdhani/Rajdhani-SemiBold.ttf);
+    font-weight: 600;
+ }
+
+ @font-face {
+    font-family: Rajdhani;
+    src: url(../font/Rajdhani/Rajdhani-Bold.ttf);
+    font-weight: 700;
+ }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://hoanganf8.github.io/htmlcss_project02/image/landing-background.jpg);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.landing .landing-decoration {
+    position: absolute;
+    background-image: url(https://hoanganf8.github.io/htmlcss_project02/image/dot-texture.png);
+    background-color: #fff;
+    background-repeat: repeat;
+    border-radius: 50%;
+    width: 64%;
+    height: 140%;
+    top: -20%;
+    right: -32%;
+}
+
+.landing-info {
+    width: 580px;
+    position: absolute;
+    top: 16%;
+    left: 13%;
+    text-align: center;
+    color: #fff;
+}
+
+.landing .landing-info .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.landing .landing-info img {
+    max-width: 60px;
+}
+
+.landing .landing-info .landing-info-pretitle {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+}
+
+.landing .landing-info .landing-info-title {
+    font-weight: 900;
+    font-family: Titillium_Web, sans-serif;
+    font-size: 6.5em;
+    position: relative;
+    top: -10px;
+    text-align: center;
+    line-height: 1em;
+}
+
+.landing .landing-info .landing-info-text {
+    width: 400px;
+    text-align: center;
+    margin: 30px auto 0;
+    line-height: 2rem;
+}
+
+.landing .landing-info .landing-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+ .btn {
+    width: 180px;
+    height: 54px;
+    border: 1px solid #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 54px;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+
+.landing .landing-info .landing-action .btn-login {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.landing .landing-info .landing-action .btn-register {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.landing #login:checked ~ .landing-info .landing-action .btn-login{
+    background-color: #fff;
+    color: #3e3f5e;
+}
+
+.landing #register:checked ~ .landing-info .landing-action .btn-register {
+    background-color: #fff;
+    color: #3e3f5e;
+}
+.landing .landing-form {
+    width: 484px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 13%;
+    /* display: flex; */
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.landing .landing-form .form {
+    transform: translate(0px, 0px);
+    background-color: #fff;
+    width: 484px;
+    padding: 64px;
+    box-shadow: 0 0 60px 0 rgba(94,92,154,.12);
+    border-radius: 12px;
+}
+
+.landing .landing-form .form:first-child {
+    margin-top: 60px;
+}
+
+.landing .landing-form .form-account {
+    margin-top: 40px;
+}
+.landing .landing-form .form-img {
+    position: absolute;
+    left: -80px;
+    top: -70px;
+}
+
+.landing .landing-form .form-title {
+    font-size: 1.635em;
+    text-align: center;
+    font-weight: 700;
+    font-family:  Rajdhani, sans-serif;
+}
+
+
+.form-input {
+    border-radius: 12px;
+    width: 100%;
+    height: 54px;
+    font-family:  Rajdhani, sans-serif;
+    color: #3e3f5e;
+    font-size: 1.8rem;
+    border: 1px solid #dedeea;
+    font-weight: 700;
+    padding: 0 18px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.landing .landing-form .landing-form-login .form-account .form-row input:not(:placeholder-shown) {
+    background: white;
+    transition: background 0.5s linear;
+}
+
+.landing .landing-form .landing-form-login .form-account .form-row input:focus {
+    border-color: #615dfa;
+}
+
+.landing .landing-form .landing-form-login .form-account .form-row{
+    position: relative;
+}
+
+.landing .landing-form .landing-form-login .form-account .form-row .form-input + label {
+    position: absolute;
+    display: inline-block;
+    color: gray;
+    top: 20px;
+    left: 20px;
+    color: #adafca;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.landing .landing-form .landing-form-login .form-account .form-row input:focus + label, 
+.landing .landing-form .landing-form-login .form-account .form-row input:not(:placeholder-shown) + label {
+    font-size: 1rem;
+    top: -4px;
+}
+
+.landing .landing-form .landing-form-login .form-account .form-row + .form-row {
+    margin-top: 30px;
+}
+
+.landing .landing-form .landing-form-login .form-checkbox .link-remember {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #adafca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.landing .landing-form .landing-form-login .form-checkbox .link-remember:hover {
+    color: #00c7d9;
+
+}
+
+.landing .landing-form .landing-form-login .form-checkbox {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.landing .landing-form .landing-form-login .form-checkbox .checkbox-me {
+    position: relative;
+
+}
+
+
+.landing .landing-form .landing-form-login .form-checkbox .checkbox-me .form-label {
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.landing .landing-form .landing-form-login .form-checkbox .checkbox-me .form-label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right:10px;
+    position: relative;
+    top: 5px;
+}
+
+.landing .landing-form .landing-form-login .form-checkbox .checkbox-me .form-label::after {
+    content: "X";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 30%;
+    left: 2%;
+    color: #fff;
+    padding: 2px;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 13px;
+}
+
+.landing .landing-form .landing-form-login .form-checkbox .checkbox-me #login-remember {
+    transition: all 0.5s linear;
+}
+
+.landing .landing-form .landing-form-login .form-checkbox .checkbox-me #login-remember:checked + .form-label::before {
+    background-color: #23d2e2;
+    transition: all 0.5s linear;
+}
+
+.landing .landing-form .landing-form-login .form-account .btn {
+   display: inline-block;
+   width: 100%;
+   height: 54px;
+   margin-top: 20px;
+   border-radius: 10px;
+   font-weight: 700;
+   color: #fff;
+   text-align: center;
+   background-color: #3e3f5e;
+   transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+
+.landing .landing-form .landing-form-login .form-account .form-btn-login {
+    background-color: #615dfa;
+    box-shadow: 4px 7px 12px 0 rgba(97,93,250,.2);
+}
+
+.landing .landing-form .landing-form-login .form-account .form-btn-login:hover {
+    background-color: #3e38ec;
+}
+
+.landing .landing-form .landing-form-login .lined-text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    position: relative;
+    color: #3e3f5e;
+}
+
+.landing .landing-form .landing-form-login .lined-text::before {
+    content: " ";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background-color: #eaeaf5
+}
+
+.landing .landing-form .landing-form-login .lined-text::after {
+    content: " ";
+    position: absolute;
+    top: 7px;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 1px;
+    background-color: #eaeaf5;
+}
+
+.landing .landing-form .landing-form-login .social-links {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.landing .landing-form .landing-form-login .social-links .fa-facebook-official {
+    color: #fff;
+    background-color: #3763d2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.landing .landing-form .landing-form-login .social-links .fa-twitter {
+    color: #fff;
+    background-color: #1abcff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.landing .landing-form .landing-form-login .social-links .fa-twitch {
+    color: #fff;
+    background-color:   #7b5dfa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.landing .landing-form .landing-form-login .social-links .fa-youtube-play {
+    color: #fff;
+    background-color: #fd434f;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.landing .landing-form .form:last-child {
+    margin-top: -620px;
+    left: 0px;
+    position: absolute;
+    transition: all 0.6s ease-in-out 0s;
+}
+
+.landing .landing-form .landing-form-register .register-img {
+    position: absolute;
+    top: -30px;
+    left: -80px;
+}
+
+.landing .landing-form .landing-form-register .form-account input:not(:placeholder-shown) {
+    background-color: #fff;
+}
+
+.landing .landing-form .landing-form-register .form-account .form-row{
+    position: relative;
+}
+
+.landing .landing-form .landing-form-register .form-account .form-input + label {
+    position: absolute;
+    display: inline-block;
+    color: gray;
+    top: 20px;
+    left: 20px;
+    color: #adafca;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    background-color: #fff;
+    border-color: #615dfa;
+    
+}
+
+.landing .landing-form .landing-form-register .form-account .form-input:focus + label, 
+.landing .landing-form .landing-form-register .form-account .form-input:not(:placeholder-shown) + label{
+    top: -4px;
+    font-size: 1rem;
+    border-color: #615dfa;
+}
+
+.landing .landing-form .landing-form-register .form-account .form-row + .form-row {
+    margin-top: 30px;
+}
+
+.landing .landing-form-register .form-account .form-checkbox {
+    margin-top: 30px;
+}
+
+.landing .landing-form-register .form-account .form-checkbox .form-label {
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: all 0.5s ease-in-out;
+    color: #3e3f5e;
+    cursor: pointer; 
+}
+
+.landing .landing-form-register .form-account .form-checkbox .form-label::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 5px;
+   display: inline-block;
+   margin-right:10px;
+    border-radius: 5px;
+   
+
+}
+
+.landing .landing-form-register .form-account .form-checkbox .form-label::after {
+    content: "X";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+   bottom: 32%;
+    left: 22%;
+    color: #fff;
+    padding: 2px;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 14px;
+
+}
+
+.landing .landing-form-register .form-account .form-checkbox #send-updates:checked + .form-label::before {
+    background-color: #23d2e2;
+    transition: background-color 0.3s linear;
+}
+
+.landing .landing-form-register .form-account .btn-register {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #23d2e2;
+    color: #fff;
+}
+
+.landing .landing-form-register .form-account .btn-register:hover {
+    background-color: #18c5d4;
+}
+
+.landing .landing-form-register .form-account .font-text {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #3e3f5e;
+    line-height: 1.7em;
+}
+
+.landing .landing-form-register .form-account .font-text span {
+    color: #23d2e2;
+}
+
+.landing-form-login,
+.landing-form-register {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+  left: 0px;
+  transition: all 0.6s ease-in-out 0s;
+  text-align: center;
+}
+
+#login:checked ~ .landing-form .landing-form-register {
+    transform: translate(50%, 0px);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    left: 0;
+    position: absolute;
+    transition: all 0.6s ease-in-out 0s;
+}
+#register:checked ~ .landing-form .landing-form-login {
+    transform: translate(50%, 0px);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    top: 500px;
+    transition: all 0.6s ease-in-out 0s;
+}

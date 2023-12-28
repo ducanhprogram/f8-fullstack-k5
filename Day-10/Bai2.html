@@ -3,88 +3,104 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bài 2</title>
+        <title>Document</title>
         <link rel="stylesheet" href="./css/Bai2.css" />
     </head>
     <body>
-        <nav>
-            <div class="container">
-                <input type="radio" name="navbar" id="simples" checked hidden />
-                <input type="radio" name="navbar" id="algoritmo" hidden />
-                <input type="radio" name="navbar" id="barra" hidden />
-                <input type="radio" name="navbar" id="captcha" hidden />
-                <div class="navbar">
-                    <label class="nav1" for="simples">Simples slideshow</label>
-                    <label class="nav2" for="algoritmo"
-                        >Algoritmo de Levenshtein</label
-                    >
-                    <label class="nav3" for="barra">Barra de progresso</label>
-                    <label class="nav4" for="captcha">Captcha com PHP</label>
-                </div>
+        <section>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <label for="simgleas" tabindex="1"
+                            >Simples slideshow</label
+                        >
+                    </li>
+                    <li>
+                        <label for="algoritmo" tabindex="2"
+                            >Algoritmo de Levenshtein</label
+                        >
+                    </li>
+                    <li>
+                        <label for="barra" tabindex="3"
+                            >Barra de progresso</label
+                        >
+                    </li>
+                    <li>
+                        <label for="captcha" tabindex="4"
+                            >Captcha com PHP</label
+                        >
+                    </li>
+                </ul>
+            </div>
 
-                <div class="content">
-                    <div id="simples-content">
-                        <h2>Simples slideshow</h2>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Labore placeat veritatis corporis eveniet,
-                            voluptatem animi eius, illum provident sunt
-                            distinctio aliquam sed odit aperiam? Velit quam
-                            facilis doloribus possimus explicabo.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quae eligendi illum doloremque nihil magni
-                            necessitatibus, eius hic nemo in provident.
-                        </p>
-                    </div>
-                    <div id="algoritmo-content">
-                        <h2>Algoritmo de Levenshtein</h2>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Labore placeat veritatis corporis eveniet,
-                            voluptatem animi eius, illum provident sunt
-                            distinctio aliquam sed odit aperiam? Velit quam
-                            facilis doloribus possimus explicabo.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quae eligendi illum doloremque nihil magni
-                            necessitatibus, eius hic nemo in provident.
-                        </p>
-                    </div>
-                    <div id="barra-content">
-                        <h2>Barra de progresso</h2>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Labore placeat veritatis corporis eveniet,
-                            voluptatem animi eius, illum provident sunt
-                            distinctio aliquam sed odit aperiam? Velit quam
-                            facilis doloribus possimus explicabo.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quae eligendi illum doloremque nihil magni
-                            necessitatibus, eius hic nemo in provident.
-                        </p>
-                    </div>
-                    <div id="captcha-content">
-                        <h2>Captcha com PHP</h2>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Labore placeat veritatis corporis eveniet,
-                            voluptatem animi eius, illum provident sunt
-                            distinctio aliquam sed odit aperiam? Velit quam
-                            facilis doloribus possimus explicabo.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quae eligendi illum doloremque nihil magni
-                            necessitatibus, eius hic nemo in provident.
-                        </p>
-                    </div>
+            <div class="content">
+                <input
+                    type="radio"
+                    id="simgleas"
+                    name="content-ra"
+                    checked
+                    hidden
+                />
+                <div class="box-1 box-inner">
+                    <h1>Simples slideshow</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Similique blanditiis officiis natus, magni modi
+                        eligendi maiores illum facilis cumque enim, vitae ad eos
+                        ut adipisci consequatur illo, aut autem corrupti.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Eligendi beatae officia consectetur ipsum maxime
+                        doloribus iure voluptatum, tempora exercitationem porro?
+                    </p>
+                </div>
+                <input type="radio" id="algoritmo" name="content-ra" hidden />
+                <div class="box-2 box-inner">
+                    <h1>Algoritmo de Levenshtein</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Similique blanditiis officiis natus, magni modi
+                        eligendi maiores illum facilis cumque enim, vitae ad eos
+                        ut adipisci consequatur illo, aut autem corrupti.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Eligendi beatae officia consectetur ipsum maxime
+                        doloribus iure voluptatum, tempora exercitationem porro?
+                    </p>
+                </div>
+                <input type="radio" id="barra" name="content-ra" hidden />
+                <div class="box-3 box-inner">
+                    <h1>Barra de progresso</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Similique blanditiis officiis natus, magni modi
+                        eligendi maiores illum facilis cumque enim, vitae ad eos
+                        ut adipisci consequatur illo, aut autem corrupti.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Eligendi beatae officia consectetur ipsum maxime
+                        doloribus iure voluptatum, tempora exercitationem porro?
+                    </p>
+                </div>
+                <input type="radio" id="captcha" name="content-ra" hidden />
+                <div class="box-4 box-inner">
+                    <h1>Captcha com PHP</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Similique blanditiis officiis natus, magni modi
+                        eligendi maiores illum facilis cumque enim, vitae ad eos
+                        ut adipisci consequatur illo, aut autem corrupti.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Eligendi beatae officia consectetur ipsum maxime
+                        doloribus iure voluptatum, tempora exercitationem porro?
+                    </p>
                 </div>
             </div>
-        </nav>
+        </section>
     </body>
 </html>
