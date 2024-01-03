@@ -70,6 +70,7 @@ body {
     font-size: 1.6rem;
     font-family: sans-serif;
     font-weight: 400;
+    outline: 0;
 }
 
 .landing {
@@ -214,7 +215,6 @@ body {
     font-family:  Rajdhani, sans-serif;
 }
 
-
 .form-input {
     border-radius: 12px;
     width: 100%;
@@ -233,7 +233,7 @@ body {
     transition: background 0.5s linear;
 }
 
-.landing .landing-form .landing-form-login .form-account .form-row input:focus {
+.landing .landing-form .landing-form-login .form-account .form-row .form-input:focus {
     border-color: #615dfa;
 }
 
@@ -252,12 +252,16 @@ body {
     pointer-events: none;
     z-index: 1;
     background-color: #fff;
+    border-color: #615dfa;
+
 }
 
 .landing .landing-form .landing-form-login .form-account .form-row input:focus + label, 
 .landing .landing-form .landing-form-login .form-account .form-row input:not(:placeholder-shown) + label {
     font-size: 1rem;
+    border-color: #615dfa;
     top: -4px;
+    padding: 0 10px;
 }
 
 .landing .landing-form .landing-form-login .form-account .form-row + .form-row {
@@ -465,6 +469,8 @@ body {
     top: -4px;
     font-size: 1rem;
     border-color: #615dfa;
+    background-color: #fff;
+    padding: 0 10px;
 }
 
 .landing .landing-form .landing-form-register .form-account .form-row + .form-row {
