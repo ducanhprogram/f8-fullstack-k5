@@ -8,6 +8,11 @@
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
         <link
             href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;600:800&display=swap"
             rel="stylesheet"
@@ -106,34 +111,47 @@
 
                 <!-- Header -->
                 <header class="header">
-                    <form action="" class="search-form">
-                        <img src="./icons/search.svg" alt="" class="icon" />
-                        <input
-                            type="text"
-                            class="search"
-                            placeholder="Search store"
-                        />
-                    </form>
+                    <input type="checkbox" name="nav-btn" id="btn" hidden />
+                    <label for="btn" class="overlay"></label>
 
-                    <nav class="nav">
-                        <a href="" class="nav-link active">Products</a>
-                        <a href="" class="nav-link">Story</a>
-                        <a href="" class="nav-link">Manufacturing</a>
-                        <a href="" class="nav-link">Packaging</a>
-                    </nav>
-                    <div class="actions">
-                        <a href="" class="action-link"
-                            ><img
-                                src="./icons/cart.svg"
-                                alt=""
-                                class="action-icon" /></a
-                        ><a href="" class="action-link"
-                            ><img
-                                src="./icons/user.svg"
-                                alt=""
-                                class="action-icon"
-                        /></a>
+                    <div class="header-wrapper">
+                        <form action="" class="search-form">
+                            <img src="./icons/search.svg" alt="" class="icon" />
+                            <input
+                                type="text"
+                                class="search"
+                                placeholder="Search store"
+                            />
+                        </form>
+                        <nav class="nav">
+                            <a href="" class="nav-link active">Products</a>
+                            <a href="" class="nav-link">Story</a>
+                            <a href="" class="nav-link">Manufacturing</a>
+                            <a href="" class="nav-link">Packaging</a>
+                        </nav>
+                        <div class="actions">
+                            <a href="" class="action-link"
+                                ><img
+                                    src="./icons/cart.svg"
+                                    alt=""
+                                    class="action-icon" /></a
+                            ><a href="" class="action-link"
+                                ><img
+                                    src="./icons/user.svg"
+                                    alt=""
+                                    class="action-icon"
+                            /></a>
+                        </div>
+                        <label for="btn" class="close-btn">
+                            <i
+                                class="fa-solid fa-xmark"
+                                style="font-size: 2rem"
+                            ></i>
+                        </label>
                     </div>
+                    <label for="btn" class="open-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
                 </header>
 
                 <!-- Main -->
@@ -157,10 +175,10 @@
                         <img src="./img/imger6.svg" alt="" />
                     </div>
                     <div class="wide">
-                        <img src="./img/imger7.svg" alt="" />
+                        <img src="./img/imger7.svg" class="img-7" alt="" />
                     </div>
                     <div class="wide">
-                        <img src="./img/imger8.svg" alt="" />
+                        <img src="./img/imger8.svg" class="img-8" alt="" />
                     </div>
                 </main>
             </div>
